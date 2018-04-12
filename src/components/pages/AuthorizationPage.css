@@ -1,0 +1,164 @@
+.AuthorizationPage {
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/img/virtus-bc.jpeg") no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Authorization {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(53, 50, 69, .8);
+    height: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.AuthorizationPanel {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2196f3;
+    max-width: 800px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.Logo {
+    margin-left: 45px;
+}
+
+.AuthPanel{
+    display: flex;
+}
+
+.AuthorizationPanel li {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+    transition: all .5s;
+}
+
+
+.AuthorizationPanel .LoginLink {
+    padding: 0 50px;
+}
+
+.AuthorizationPanel .RegisterLink {
+    padding: 0 50px;
+}
+
+.ActiveTab::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    background-color: #507af5;
+    left: 0;
+    right: 0;
+    top: 48px;
+}
+
+.UsersField {
+    width: 350px;
+    padding: 15px 0 15px 50px;
+    margin: 0px auto 0 auto;
+    border: none;
+    background: transparent url("../../assets/img/user-field.png") no-repeat;
+    border-bottom: 1px solid #ffffff;
+    background-position: left 40%;
+    transition: all .4s;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.UsersField:focus {
+    border-bottom: 1px solid #2196f3;
+    background: transparent url("../../assets/img/user-field-active.png") no-repeat;
+    background-position: left 40%;
+}
+
+
+
+.UsersField::-webkit-input-placeholder {
+    color: #8492af;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 56px;
+}
+
+.UsersField:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.PasswordField {
+    width: 350px;
+    padding: 15px 0 15px 50px;
+    margin: 0 auto 0 auto;
+    border: none;
+    background: transparent url("../../assets/img/password-field.png") no-repeat;
+    border-bottom: 1px solid #ffffff;
+    background-position: left 40%;
+    transition: all .4s;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.PasswordField:focus {
+    border-bottom: 1px solid #2196f3;
+    background: transparent url("../../assets/img/password-field-active.png") no-repeat;
+    background-position: left 40%;
+}
+
+
+
+.PasswordField::-webkit-input-placeholder {
+    color: #8492af;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 56px;
+}
+
+.PasswordField:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+/*
+    Responsive
+ */
+
+@media screen and (max-width: 1440px) {
+    .AuthorizationPanel {
+        height: 100px;
+    }
+
+    .ActiveTab::before {
+        top: 52px;
+    }
+}
+/*
+    Responsive
+ */
+
+@media screen and (max-width: 1440px) {
+    .Authorization {
+        max-width: 750px;
+    }
+
+    .AuthorizationPanel {
+        max-width: 750px;
+    }
+
+    .ActiveTab::before {
+        top: 48px;
+    }
+}

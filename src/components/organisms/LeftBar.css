@@ -1,0 +1,105 @@
+.LeftBar {
+    width: 100px;
+    position: fixed;
+    left: 0;
+    background-color: #2f3242;
+    height: 100%;
+}
+
+.MainNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.MainNavigation li {
+    margin-bottom: 60px;
+}
+
+.ToHome {
+    display: inline-block;
+    width: 31px;
+    height: 26px;
+    background: url("../../assets/img/home.png") no-repeat;
+}
+
+.ActiveHome {
+    background: url("../../assets/img/home-active.png") no-repeat;
+}
+
+.ToWorkflow {
+    display: inline-block;
+    width: 28px;
+    height: 19px;
+    background: url("../../assets/img/menu.png") no-repeat;
+}
+
+.ActiveWorkflow {
+    background: url("../../assets/img/menu-active.png") no-repeat;
+}
+
+.ToProjects {
+    display: inline-block;
+    width: 31px;
+    height: 19px;
+    background: url("../../assets/img/trending-up.png") no-repeat;
+}
+
+.ActiveProjects {
+    background: url("../../assets/img/trending-up-active.png") no-repeat;
+}
+
+.ToChat {
+    display: inline-block;
+    width: 31px;
+    height: 24px;
+    background: url("../../assets/img/messages.png") no-repeat;
+    position: relative;
+}
+
+.ToChat::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2196f3;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    animation: 3.5s linear 0s normal none running animation-load;
+}
+
+@keyframes animation-load {
+    0%, 25%, 50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: .25;
+    }
+    85% {
+        opacity: .5;
+    }
+    90% {
+        opacity: .75;
+    }
+   100% {
+        opacity: 1;
+    }
+}
+
+.ActiveChat {
+    background: url("../../assets/img/messages-active.png") no-repeat;
+}
+
+.ToRaport {
+    display: inline-block;
+    width: 34px;
+    height: 22px;
+    background: url("../../assets/img/users.png") no-repeat;
+}
+
+.ActiveRaport {
+    background: url("../../assets/img/users-active.png") no-repeat;
+}

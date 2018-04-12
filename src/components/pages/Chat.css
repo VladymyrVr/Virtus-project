@@ -1,0 +1,101 @@
+.ChatPage {
+    margin-left: 100px;
+    width: calc(100% - 100px);
+}
+.ChatHeader {
+    background: #2481ce;
+    padding: 0 30px 0 30px;
+    height: 100px;
+    box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Chat {
+    min-height: calc(100vh - 200px);
+    background: #322e3f;
+}
+
+.ChatTabs {
+    display: flex;
+}
+
+.ChatTabs p {
+    color: #000;
+    font-size: 18px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.Inbox, .Sent, .Trash {
+    position: relative;
+}
+
+.Inbox::before {
+    width: 18px;
+    height: 18px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background: url("../../assets/img/inbox.png") no-repeat;
+}
+
+.InboxActive::before {
+    width: 18px;
+    height: 18px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background: url("../../assets/img/inbox-active.png") no-repeat;
+}
+
+
+.Sent::before {
+    width: 19px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background: url("../../assets/img/telegram.png") no-repeat;
+}
+
+
+.SentActive::before {
+    width: 19px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background: url("../../assets/img/telegram-active.png") no-repeat;
+}
+
+.Trash::before {
+    width: 14px;
+    height: 18px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background: url("../../assets/img/delete.png") no-repeat;
+}
+
+.TrashActive::before {
+    width: 14px;
+    height: 18px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    background: url("../../assets/img/delete-active.png") no-repeat;
+}
+
+.ChatTabs .InboxActive, .ChatTabs .SentActive, .ChatTabs .TrashActive {
+    color: #ffffff;
+}
+
+

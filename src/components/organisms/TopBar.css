@@ -1,0 +1,306 @@
+.TopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 3px 80px rgba(158, 163, 180, 0.3);
+    background-color: #2f3242;
+}
+
+.RightPanel {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.TopBar .Logo {
+    margin-left: 30px;
+}
+
+.Search {
+    display: inline-block;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: url("../../assets/img/find-icon.png") no-repeat;
+    margin-right: 40px;
+}
+
+.Search:hover {
+    background: url("../../assets/img/find-icon-active.png") no-repeat;
+}
+
+.Notifications {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url("../../assets/img/notification-icon.png") no-repeat;
+    margin-right: 40px;
+    border: none;
+}
+
+.Notifications::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: -3px;
+    right: 3px;
+    position: absolute;
+    background: #2196f3;
+    display: block;
+    animation: 3.5s linear 0s normal none running animation-load;
+}
+
+.PersonMenu {
+    background: rgba(117, 125, 164, .9) !important;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 6px, rgba(0, 0, 0, 0.5) 0px 1px 4px !important;
+}
+
+.PersonMenu > div > div > div > span > div > div {
+    color: #ffffff !important;
+}
+
+@keyframes animation-load {
+    0%, 25%, 50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: .25;
+    }
+    85% {
+        opacity: .5;
+    }
+    90% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Notifications:hover {
+    background: url("../../assets/img/notification-icon-active.png") no-repeat;
+}
+
+.Person {
+    display: flex;
+    align-items: center;
+}
+
+.Person img {
+    margin-right: 25px;
+}
+
+.Person .DropButton {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url("../../assets/img/arrow-icon.png") no-repeat;
+    border: none;
+}
+
+.Person .DropButton:hover {
+    background: url("../../assets/img/arrow-icon-active.png") no-repeat;
+
+}
+
+.SearchWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.SearchWrapper {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+    background: url("../../assets/img/virtus-bc.jpeg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.js .BtnSearchClose {
+    width: 32px;
+    height: 32px;
+    background: url("../../assets/img/close-btn.png") no-repeat;
+    position: absolute;
+    top: 1.25em;
+    right: 25px;
+    display: none;
+    border: none;
+}
+
+.js .BtnSearchClose:hover {
+    background: url("../../assets/img/close-btn-active.png") no-repeat;
+
+}
+
+.js .BtnSearchClose {
+    display: block;
+}
+
+.SearchForm {
+    margin: 5em 0;
+}
+
+.SearchInput {
+    padding: 1vw;
+    font-family: inherit;
+    font-size: 3vw;
+    line-height: 1;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 75%;
+    max-width: 900px;
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+    color: #fffff9;
+    background-color: rgba(53, 50, 69, .8);
+}
+
+.SearchInput::-webkit-input-placeholder {
+    opacity: 0.1;
+    /* WebKit, Blink, Edge */
+    color: #fff;
+}
+
+.SearchInput::-ms-clear {
+    display: none;
+}
+
+.SearchInfo {
+    font-size: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0.85em 0;
+    text-align: right;
+}
+
+.NotificationsMessages {
+    background: transparent !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    left: -31415px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.NewestMessages {
+    margin-top: 20px;
+}
+
+.NewMessages {
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(158, 163, 180, 0.3);
+    background-color: #2f3242;
+}
+
+.NewestMessages p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.LastMessagesList {
+    background-color: #2f3242;
+    box-shadow: 0 3px 20px rgba(158, 163, 180, 0.3);
+    width: 100%;
+    max-height: 495px;
+    overflow-y: hidden;
+}
+
+.LastMessagesList li {
+    padding: 15px;
+    width: calc(100% - 30px);
+    border-bottom: 1px solid rgb(57, 53, 70);
+}
+
+.LastMessagesList li:hover {
+    background: #434654;
+    cursor: pointer;
+}
+
+.LastMessagesList .MessagesInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.LastMessagesList .MessagesUserInfo {
+    display: flex;
+    align-items: center;
+}
+
+.LastMessagesList .MessagesUserInfo p {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.LastMessagesList .MessagesLast {
+    font-size: 12px;
+}
+
+/************************/
+/* Transitions 			*/
+/************************/
+
+.js .MainWrapper {
+    transform: perspective(1000px);
+    transition: transform 0.6s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.js .MainWrapMove {
+    transform: perspective(1000px) translate3d(0, 25vh, 0);
+}
+
+.js .SearchWrapper {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.js .SearchOpen {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* Close button */
+.BtnSearchClose {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 1);
+    transition: opacity 0.6s, transform 0.6s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.SearchOpen .BtnSearchClose {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+.js .SearchForm {
+    opacity: 0;
+    transform: scale3d(0.7, 0.7, 1);
+    transition: opacity 0.6s, transform 0.6s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.js .SearchOpen .SearchForm {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}

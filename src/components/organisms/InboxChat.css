@@ -1,0 +1,89 @@
+.InboxChat {
+    display: flex;
+}
+
+.SideControlConversations {
+    max-width: 525px;
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3);
+    background-color: #2b2d3c;
+}
+
+.SideControlConversations .ConversationsList {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.ConversationsList li {
+    cursor: pointer;
+    padding: 30px 20px 30px 50px;
+    width: calc(100% - 70px);
+    border-bottom: 1px solid rgb(57, 53, 70);
+}
+
+.ConversationsList li:hover {
+    background-color: #2f3242;
+}
+
+.ConversationsInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ConversationsInfo .Unread {
+    color: #2196f3;
+    font-size: 14px;
+}
+
+.ConversationsInfo .Read {
+    color: #9ca1b2;
+    font-size: 14px;
+}
+
+.UserInfo {
+    display: flex;
+    align-items: center;
+}
+
+.UserInfo p {
+    margin-left: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.LastMessage p {
+    color: #9ca1b2;
+    font-size: 16px;
+}
+
+.ChatRoom {
+    max-width: calc(100% - 525px);
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (max-width: 1600px) {
+    .SideControlConversations {
+        max-width: 440px;
+    }
+
+    .ChatRoom {
+        max-width: calc(100% - 440px);
+    }
+
+    .ChatRoom .CompanionInfo {
+        max-width: 270px;
+    }
+
+    .ChatRoom .ChatConversation {
+        max-width: calc(100% - 330px);
+    }
+
+    .ConversationsList li {
+        padding: 20px  20px 20px 50px;
+    }
+}

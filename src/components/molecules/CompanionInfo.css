@@ -1,0 +1,79 @@
+.CompanionInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    max-width: 320px;
+    min-height: calc(100vh - 250px);
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3);
+    background-color: #2b2d3c;
+}
+
+.CompanionInfo .UserAvatar {
+    margin-bottom: 20px;
+
+}
+.ProfileWrapper {
+    position: relative;
+}
+
+ .OnlineStatus::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4caf50;
+    border: 1px solid #2b2d3c;
+    top: 0;
+    right: 0;
+    z-index: 25;
+}
+
+
+.CompanionInfo span {
+    color: #9ca1b2;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.UserName {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.UserName .CompanionName {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.UserName .CompanionProff {
+    color: #9ea3b4;
+    font-size: 16px;
+}
+
+.ShortInfo {
+    max-width: 275px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ShortInfo p {
+    color: #9ca1b2;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.EmailInfo, .PhoneInfo, .AdressInfo, .CompanyInfo {
+    text-align: center;
+}
+
+.EmailInfo p, .PhoneInfo p, .AdressInfo p, .CompanyInfo p {
+    color: #ffffff;
+    font-size: 16px;
+}
+

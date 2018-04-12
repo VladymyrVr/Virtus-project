@@ -1,0 +1,74 @@
+
+.highcharts-area {
+    fill: rgba(33, 150, 243, .1);
+}
+
+
+.highcharts-axis-line {
+    stroke: rgba(256, 256, 256, 0);
+}
+
+.highcharts-tick {
+    stroke: #322e3f;
+    stroke-opacity: .3;
+}
+
+.highcharts-axis-labels text {
+    font-size: 16px!important;
+    color: #9ca1b2!important;
+}
+
+.GraphGroup {
+    padding-top: 50px;
+    position: relative;
+}
+
+.StatsProgressWrapper {
+
+    display: flex;
+    max-width: 730px;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+.ViewsProgress, .VisitorProgress, .ImpressionsProgress {
+    position: relative;
+    margin-right: 25px;
+}
+
+.ViewsProgress p, .VisitorProgress p, .ImpressionsProgress p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #2196f3;
+}
+
+.ViewsWrapper, .VisitorsWrapper, .ImpressionsWrapper  {
+    display: flex;
+    align-items: center;
+}
+
+.ViewsStats p, .VisitorsStats p, .ImpressionsStats p {
+    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.ViewsStats span, .VisitorsStats span, .ImpressionsStats span {
+    color: #9ca1b2;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.GraphGroup .SelectField {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+}

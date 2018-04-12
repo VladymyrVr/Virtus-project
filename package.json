@@ -1,0 +1,33 @@
+{
+  "name": "virtus-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "material-ui": "^0.20.0",
+    "moment": "^2.22.0",
+    "rc-progress": "^2.2.5",
+    "react": "^16.2.0",
+    "react-addons-update": "^15.6.2",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-table": "^4.3.1",
+    "react-calendar": "^2.13.5",
+    "react-dom": "^16.2.0",
+    "react-highcharts": "^16.0.2",
+    "react-moment": "^0.7.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-trello": "^1.28.1",
+    "redux": "^3.7.2",
+    "sort-multidimensional-array-func": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:4000"
+}

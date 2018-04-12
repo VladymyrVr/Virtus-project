@@ -1,0 +1,94 @@
+.HomeUsersProjects {
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 3px 40px rgba(23, 24, 32, 0.2);
+}
+.HomeUsersProjects ul {
+    width: 100%;
+}
+
+.HomeUsersProjects .ProjectsCard {
+    padding: 30px 25px;
+    display: flex;
+    width: calc(100% - 50px);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(57, 53, 70);
+
+}
+
+.HomeUsersProjects .ProjectsCard:hover {
+    background: #2f3242;
+    cursor: pointer;
+}
+
+.HomeUsersProjects .HeaderUsersProjects {
+    width: 100%;
+    padding: 35px 0;
+    background: center;
+    background: #3a3e52;
+    text-align: center;
+}
+
+.HomeUsersProjects .HeaderUsersProjects h2 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.HomeUsersProjects .ProjectInfo {
+    display: flex;
+    align-items: center;
+}
+.HomeUsersProjects .ProjectsFlexWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.ProjectsCard .Title {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.HomeUsersProjects .ProjectInfo .DetailInfo {
+    display: flex;
+}
+
+.DetailInfo .Company {
+    font-size: 14px;
+    color: #9ea3b4;
+    position: relative;
+    margin-right: 26px;
+}
+
+.DetailInfo .Company::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #9ea3b4;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -13px;
+}
+
+.DetailInfo .Price {
+    font-size: 14px;
+    color: #9ea3b4;
+}
+
+.UserAvatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+    .HomeUsersProjects {
+        max-width: 400px;
+    }
+}

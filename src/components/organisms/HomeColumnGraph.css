@@ -1,0 +1,34 @@
+.HomeColumnGraph {
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 3px 40px rgba(23, 24, 32, 0.2);
+}
+
+.ColumnHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ColumnHeader p {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.HomeColumnGraph .SelectField p {
+    color: #9ea3b4;
+}
+
+.HomeColumnGraph .SelectField select {
+    color: #9ea3b4;
+}
+
+
+@media screen and (max-width: 1440px){
+    .HomeColumnGraph {
+        max-width: 500px;
+        padding: 10px;
+    }
+}

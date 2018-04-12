@@ -1,0 +1,20 @@
+.ChatTrash {
+    padding: 50px 0;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatTrash p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 36px;
+}
+
+.ChatTrash span {
+    font-size: 16px;
+    color: #9ea3b4;
+    font-style: italic;
+}

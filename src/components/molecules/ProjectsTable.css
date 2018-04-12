@@ -1,0 +1,171 @@
+.react-bs-table {
+    margin: 0 auto!important;
+    width: 100%;
+}
+
+.react-bs-table td {
+    position: relative;
+    background-color: #3a3e52;
+    color: #ffffff;
+}
+
+
+.react-bs-table th {
+    color: #9ea3b4;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+.ProjectsTable-Body {
+    border-collapse:separate;
+    border-spacing:  0 25px ;
+}
+
+.ProjectsTable-Body tr {
+    height: 110px;
+}
+
+.LineTitle {
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.ProjectsWrap {
+    padding-left: 35px;
+}
+
+.ProjectsWrap .TitleProject {
+    margin-bottom: 5px;
+}
+
+.ProjectsWrap .ProjectCompany {
+    color: #9ea3b4;
+    font-size: 14px;
+}
+
+.ValueProject {
+    text-align: center;
+}
+
+.ProjectWrap {
+    margin-left: 35px;
+}
+
+.ProjectWrap .DeadlineProject {
+    margin-bottom: 5px;
+}
+
+.ProjectWrap .TimesToLeft {
+    color: #9ea3b4;
+    font-size: 14px;
+}
+
+.ProjectWrap p {
+    text-align: left;
+}
+
+.ProgressWrapper {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.ProgressWrapper span {
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.ProfileFlexWrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.ProfileFlexWrapper .ProfilePhotoWrap {
+    margin-right: 20px;
+}
+
+.ProfileFlexWrapper .DeveloperName {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.ProfileFlexWrapper .DeveloperProf {
+    font-size: 14px;
+    color: #9ea3b4;
+}
+
+.StatusProject {
+    text-align: center;
+}
+
+.TimeSpent {
+    margin-left: 25px;
+}
+
+.react-bootstrap-table-page-btns-ul {
+    float: none!important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-link{
+    color:#ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page-item:last-of-type{
+    display: none;
+}
+
+.pagination li {
+    padding: 10px;
+    border: 1px solid #9ea3b4!important;
+    background-color: #3a3e52;
+}
+
+.pagination:not(:nth-child(1)) {
+    border-left: none !important;
+}
+
+
+
+.page-item{
+    border: 1px solid transparent!important;
+}
+
+.page-item:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.pagination .active a{
+    color: #2196f3;
+}
+
+.pagination .active::after{
+    display: none;
+}
+
+.page-link:focus{
+    box-shadow: none!important;
+}
+
+.pagination li[title="next page"],.pagination li[title="previous page"], .pagination li[title="first page"], .pagination li[title="last page"]  {
+    border: none!important;
+    background: transparent;
+}
+
+.pagination li[title="next page"]>a , .pagination li[title="previous page"]>a, .pagination li[title="first page"]>a, .pagination li[title="last page"]>a {
+    color: #ffffff;
+    font-size: 18px;
+}

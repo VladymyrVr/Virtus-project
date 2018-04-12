@@ -1,0 +1,146 @@
+.UsersTable .UsersTableTableCell {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    padding-left: 40px;
+    background: #3a3e52;
+    border-right: 1px solid #403c54;
+}
+
+.UsersTable-Body {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    width: 100%;
+}
+
+.UsersTable .react-bs-table {
+    margin: 0 auto !important;
+
+}
+
+.UsersTable .UsersTableTableCell a {
+    text-decoration: none;
+}
+
+.UsersTable .UsersTableTableCell.Menu {
+    padding-right: 40px;
+    justify-content: center;
+}
+
+.UsersTable .table.table-bordered > tbody > tr {
+    width: 100%;
+    border: 1px solid #403c54;
+    border-right: none;
+}
+
+.UsersTable .react-bs-table .table-bordered > tbody > tr > td {
+    padding: 0;
+}
+
+.UsersTable .react-bs-table .table-bordered > thead > tr:first-child > td, .UsersTable .react-bs-table .table-bordered > thead > tr:first-child > th {
+    font: 400 20px/14px Montserrat;
+    color: #8492af;
+    padding-bottom: 10px;
+    padding-left: 80px;
+}
+
+.UsersTable .ActivityWrapper {
+    padding-left: 60px;
+}
+
+.UsersTable .ProfilePhotoWrap {
+    overflow: hidden;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #c7c7c7;
+    z-index: 10;
+    margin-right: 30px;
+}
+
+.UsersTable .ProfilePhotoWrap img {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.UsersTable .ProfileInfoWrap {
+    position: relative;
+}
+
+.Online {
+    position: absolute;
+    background: #00bf1b;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    top: 2px;
+    right: 30px;
+    z-index: 100;
+    box-sizing: content-box;
+}
+
+.ProfileName {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ProfileProf {
+    font-size: 14px;
+    color: #8492af;
+    margin-bottom: 0;
+}
+
+.ActivityStatusOnline {
+    position: relative;
+}
+
+.ActivityStatusOnline::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -26px;
+    width: 16px;
+    height: 16px;
+    background: url("../../assets/img/online.png") no-repeat;
+}
+
+.ActivityStatusOffline {
+    position: relative;
+}
+
+.ActivityStatusOffline::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -26px;
+    width: 16px;
+    height: 16px;
+    background: url("../../assets/img/offline.png") no-repeat;
+}
+
+.OnlineActive {
+    color: #00bf1b;
+}
+
+.OfflineActive {
+    color: #8492af;
+}
+
+.UsersTableTableCell .email {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.UsersTableTableCell .tel {
+    font-size: 14px;
+    color: #ffffff;
+}
+

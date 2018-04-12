@@ -1,0 +1,58 @@
+.Registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.Registration h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.LogoName {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.LogoName > span {
+    color: #5384ff;
+}
+
+
+.Registration .UsersField {
+    margin-bottom: 20px;
+}
+
+.Registration .EnterButton {
+    margin-top: 50px;
+}
+
+.RegistrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SnackBarStyle > div {
+    background: #353245!important;
+    border-radius: 5px!important;
+    text-align: center!important;
+}
+
+/*
+    Responsive
+ */
+
+@media screen and (max-width: 1440px) {
+    .Registration {
+        padding: 50px 0;
+    }
+
+    .Registration h2 {
+        margin-bottom: 50px;
+    }
+}

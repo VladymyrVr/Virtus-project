@@ -1,0 +1,19 @@
+.HomePage {
+    margin-left: 100px;
+    width: calc(100% - 150px);
+    min-height: calc(100vh - 160px);
+    background: #322e3f;
+    padding: 30px 20px 30px 30px
+}
+
+.HomePage .MarginMiddle {
+    margin-bottom: 30px;
+}
+
+
+.HomeFlexWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

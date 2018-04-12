@@ -1,0 +1,30 @@
+.UsersPage {
+    margin-left: 100px;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 100px);
+    background: #322e3f;
+}
+
+.UsersHeader {
+    background: #2481ce;
+    padding: 0 30px 0 60px;
+    height: 100px;
+    box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.UsersHeader p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.UsersContent {
+    min-height: calc(100vh - 290px);
+    padding: 60px 60px 30px 60px;
+    background: #322e3f;
+    max-width: calc(100% - 120px);
+    width: 100%;
+}
+

@@ -1,0 +1,30 @@
+.EnterButton {
+    width: 200px;
+    height: 65px;
+    border-radius: 36px;
+    background: transparent;
+    border: 1px solid #2196f3;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    transition: all .8s;
+}
+
+.EnterButton::before {
+    content: ">";
+    font-size: 24px;
+    position: absolute;
+    color: transparent;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.EnterButton:hover {
+    background: #2196f3;
+}
+
+.EnterButton:hover::before {
+    color: #ffffff;
+}

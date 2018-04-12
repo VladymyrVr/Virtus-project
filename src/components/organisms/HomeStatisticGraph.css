@@ -1,0 +1,15 @@
+.HomeGraphGroup {
+    padding-top: 50px;
+    position: relative;
+    max-width: 1270px;
+    height: 485px;
+    width: 100%;
+    margin-right: 25px;
+    box-shadow: 0 3px 40px rgba(23, 24, 32, 0.2);
+}
+
+@media screen and (max-width: 1440px) {
+    .HomeGraphGroup {
+        max-width: 850px;
+    }
+}

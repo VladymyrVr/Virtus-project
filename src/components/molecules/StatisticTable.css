@@ -1,0 +1,89 @@
+.SortingBlock {
+    padding-right: 20px !important;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+}
+
+.TableHeader th:first-child  {
+    padding-left: 50px;
+}
+
+.TableBody td {
+    padding: 25px 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.ActiveStatus, .DisableStatus {
+    position: relative;
+    text-align: center;
+}
+
+.ActiveStatus::before, .DisableStatus::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+.ActiveStatus::before {
+    background: #4caf50;
+}
+
+.DisableStatus::before {
+    background: #f44336;
+}
+
+.TableBody  tr:hover {
+    background-color: #3a3e52;
+}
+
+.TableHeader th{
+    padding: 25px 0;
+    background-color: #3a3e52;
+}
+
+.StatisticTable {
+    max-width: 100%;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.asc::after {
+    border-bottom-color: #333;
+}
+
+.desc::after {
+    border-top-color: #333;
+}
+
+.asc::after, .desc::after, .default::after {
+    display: inline-block;
+    content: '>';
+    line-height: 16px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.default {
+    color: #9ca1b2;
+}
+
+.asc, .desc {
+    color: #ffffff;
+}
+
+
+.asc::after {
+    transform: rotate(-90deg);
+}
+
+.desc::after, .default::after {
+    transform: rotate(90deg);
+}

@@ -1,0 +1,70 @@
+.InboxMessages {
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 3px 40px rgba(23, 24, 32, 0.2);
+}
+
+.InboxMessages .InboxMessagesList {
+    width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.InboxMessages .InboxMessagesList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.InboxMessages .InboxMessagesList::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.InboxMessages .InboxMessagesList:hover::-webkit-scrollbar-thumb {
+    background: #404359;
+
+}
+
+.InboxMessages .InboxMessagesList::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.InboxMessages .InboxMessagesList::-webkit-scrollbar-track:hover {
+    box-shadow: inset 0 0 5px #ffffff;
+
+}
+
+.InboxMessages .InboxMessagesList li {
+    padding: 20px;
+    width: calc(100% - 40px);
+    border-bottom: 1px solid rgb(57, 53, 70);
+}
+
+.InboxMessagesList li:hover {
+    background: #2f3242;
+    cursor: pointer;
+}
+
+.HeaderMessagesHome {
+    width: 100%;
+    padding: 35px 0;
+    background: center;
+    background: #3a3e52;
+    text-align: center;
+}
+
+.HeaderMessagesHome h2 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.HeaderMessagesHome h2 span {
+    color: #2196f3;
+}
+
+@media screen and (max-width: 1440px) {
+    .InboxMessages {
+        max-width: 375px;
+    }
+}

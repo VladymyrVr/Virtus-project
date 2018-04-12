@@ -1,0 +1,54 @@
+
+.CardInfo {
+    display: flex;
+    align-items: center;
+}
+
+.CardInfo .Project {
+    font-size: 14px;
+    color: #9ea3b4;
+    position: relative;
+    margin-right: 30px;
+
+}
+
+.CardInfo .Project::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #9ea3b4;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -15px;
+}
+
+.CardInfo .CounterSum {
+    color: #2196f3;
+    font-size: 14px;
+}
+
+.CardHeader .TitleCard {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.CardHeader {
+    position: relative;
+    margin-left: 5px;
+}
+
+.CardHeader::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background: url("../../../assets/img/chevron-right.png") no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px;
+}
+

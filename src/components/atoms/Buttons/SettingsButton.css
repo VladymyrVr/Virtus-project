@@ -1,0 +1,9 @@
+.SettingsButton {
+    width: 4px;
+    height: 16px;
+    border: none;
+    background: url("../../../assets/img/options.png") no-repeat;
+}
+
+
+
