@@ -135,6 +135,32 @@
     opacity: 0;
 
 }
+@media screen and (max-width: 1124px) {
+    .InboxChat .SideControlConversations {
+        max-width: 420px;
+    }
+
+    .InboxChat .UserInfo p {
+        font-size: 16px;
+    }
+
+    .InboxChat .ChatRoom {
+        max-width: calc(100% - 420px);
+    }
+
+    .SentChat .SideControlConversations {
+        max-width: 420px;
+    }
+
+    .SentChat .UserInfo p {
+        font-size: 16px;
+    }
+
+    .SentChat .ChatRoom {
+        max-width: calc(100% - 420px);
+    }
+}
+
 
 @media screen and (max-height: 900px) {
 

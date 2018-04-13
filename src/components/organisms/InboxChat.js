@@ -183,7 +183,7 @@ let sortChatDate = this.state.inboxData.sort(function (a, b) {
         else if (new Date(a.devmessages[a.devmessages.length -1 ].time) < new Date(b.devmessages[b.devmessages.length -1 ].time)) {
             return  1
         }
-
+    return true
 });
             this.setState({
                 inboxData: sortChatDate
@@ -195,7 +195,6 @@ let sortChatDate = this.state.inboxData.sort(function (a, b) {
         store.subscribe((state) => {
             this.filterChats(store.getState().chatStatus)
         });
-        console.log(this.state.inboxData)
         return (
             <div className="InboxChat">
                 {!this.state.isLoading &&

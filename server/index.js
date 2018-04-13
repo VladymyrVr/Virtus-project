@@ -197,6 +197,8 @@ const messages = [
         isUnread: false
     }];
 
+let settingData = null;
+
 const randomMessages = ['Sorry i am busy now', 'Please write later', 'Woops wopps', 'NaVi', 'I am boss , i work when i want work)', 'Okey', 'Hi i work at home today. See tomorrow', 'Hi, how do you do?'];
 
 const ProjectsList = [
@@ -816,6 +818,18 @@ App.post('/api/register', (req, res) => {
     console.log('New User register in system');
     console.log(usersList);
     return res.json();
+});
+
+App.post('/api/settingData', (req, res) => {
+    settingData = req.body;
+    console.log(settingData);
+    return res.json();
+});
+
+App.get('/api/getSettingData', (req, res) => {
+    return res.json(
+        settingData
+    )
 });
 
 App.post('/api/pushUserMessage', (req, res) => {

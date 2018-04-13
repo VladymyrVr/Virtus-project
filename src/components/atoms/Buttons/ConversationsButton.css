@@ -9,7 +9,7 @@
     border: 1px solid #2196f3;
     transition: all .5s;
     font-size: 18px;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
 .ConversationsButton:hover {

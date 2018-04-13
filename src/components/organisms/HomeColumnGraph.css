@@ -26,9 +26,22 @@
 }
 
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1900px){
     .HomeColumnGraph {
-        max-width: 500px;
+        max-width: calc(100% - 750px);
         padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1360px){
+    .HomeColumnGraph {
+        max-width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .HomeFlexWrapper {
+        justify-content: space-around;
     }
 }

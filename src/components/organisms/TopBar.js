@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 import Popover, {PopoverAnimationVertical} from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
@@ -246,9 +246,9 @@ class TopBar extends Component {
                             className="PersonMenu"
                         >
                             <Menu>
-                                <MenuItem primaryText="Refresh"/>
-                                <MenuItem primaryText="Help &amp; feedback"/>
-                                <MenuItem primaryText="Settings"/>
+                                <Link to='/setting'>
+                                    <MenuItem primaryText="Settings"/>
+                                </Link>
                                 <MenuItem onClick={this.handleLogOut} primaryText="Log out"/>
                             </Menu>
                         </Popover>

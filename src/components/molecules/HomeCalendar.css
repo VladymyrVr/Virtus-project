@@ -62,7 +62,7 @@ button.react-calendar__tile:enabled:hover {
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1900px) {
     .HomeCalendar {
         max-width: 340px;
     }

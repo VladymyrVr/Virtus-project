@@ -8,8 +8,8 @@
     box-shadow: 0 3px 40px rgba(23, 24, 32, 0.2);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1900px) {
     .HomeGraphGroup {
-        max-width: 850px;
+        max-width: calc(100% - 450px);
     }
 }

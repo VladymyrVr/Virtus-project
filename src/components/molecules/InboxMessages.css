@@ -63,7 +63,7 @@
     color: #2196f3;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1900px) {
     .InboxMessages {
         max-width: 375px;
     }

@@ -10,6 +10,7 @@ import Workflow from './components/pages/Workflow';
 import Projects from './components/pages/Projects';
 import Users from './components/pages/Users';
 import Chat from './components/pages/Chat';
+import Setting from './components/pages/Setting';
 
 class App extends Component {
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
                         <PrivateLayout exact path='/projects' component={Projects}/>
                         <PrivateLayout exact path='/users' component={Users}/>
                         <PrivateLayout exact path='/chat' component={Chat}/>
+                        <PrivateLayout exact path='/setting' component={Setting}/>
                     </Switch>
                 </div>
             </MuiThemeProvider>

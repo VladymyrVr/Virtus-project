@@ -1,0 +1,151 @@
+.SettingsPage {
+    margin-left: 100px;
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.SettingsPage .RedactPanel {
+    max-width: 50%;
+    padding: 25px 0;
+    width: 100%;
+    height: calc( 100% - 50px);
+    text-align: center;
+}
+
+.SettingsPage .RedactPanel h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 25px 0;
+}
+
+.SettingsPage form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SettingsPage form label {
+    margin-bottom: 15px;
+    color: #9ea3b4;
+    font-size: 18px;
+}
+
+.SettingsPage form input {
+    border-radius: 10px;
+    padding: 15px 15px 15px 55px;
+    width: 200px;
+    border: 1px solid #2f3242;
+    background: #2f3242;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.SettingsPage .AboutYourself textarea {
+    max-width: 50%;
+    padding: 15px;
+    height: 90px;
+    width: 100%;
+    border: 1px solid #2f3242;
+    background: #2f3242;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.SettingsPage form input:focus, .SettingsPage .AboutYourself textarea:focus {
+    border: 1px solid #2196f3;
+}
+
+.SettingsPage .AddButton {
+    margin:  0 auto;
+}
+
+.SettingsPage .InformativePanel {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.SettingsPage .InformativePanel div {
+    max-width: 250px;
+    padding: 25px;
+    width: 100%;
+    border-radius: 10px;
+    background: #2f3242;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.SettingsPage .InformativePanel div:hover {
+    background: #434654;
+    transform: scale(1.1);
+}
+
+.SettingsPage .InformativePanel h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+}
+
+.SettingsPage .InformativePanel div p {
+    font-size: 14px;
+    color: #9ea3b4;
+    margin-bottom: 15px;
+}
+
+.SettingsPage .InformativePanel div span {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.SettingsPage .InformativePanel .ShortInfo span {
+    align-self: flex-start;
+    text-align: justify;
+}
+
+.SettingsPage .NameField input {
+    background: #2f3242 url("../../assets/img/user.png") no-repeat 10px ;
+}
+
+.SettingsPage .NameField input:focus {
+    background: #2f3242 url("../../assets/img/user-active.png") no-repeat 10px ;
+}
+
+.SettingsPage .BirthDay input {
+    background: #2f3242 url("../../assets/img/date.png") no-repeat 10px ;
+}
+
+.SettingsPage .BirthDay input:focus {
+    background: #2f3242 url("../../assets/img/date-active.png") no-repeat 10px ;
+}
+
+.SettingsPage .MobileField input {
+    background: #2f3242 url("../../assets/img/phone.png") no-repeat 10px ;
+}
+
+.SettingsPage .MobileField input:focus {
+    background: #2f3242 url("../../assets/img/phone-active.png") no-repeat 10px ;
+}
+
+.SettingsPage .EmailField input {
+    background: #2f3242 url("../../assets/img/email.png") no-repeat 10px ;
+}
+
+.SettingsPage .EmailField input:focus {
+    background: #2f3242 url("../../assets/img/email-active.png") no-repeat 10px ;
+}
+

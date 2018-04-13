@@ -5,9 +5,12 @@
 .SideControlConversations {
     max-width: 525px;
     width: 100%;
-    min-height: calc(100vh - 200px);
+    height: calc(100vh - 210px);
     box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3);
     background-color: #2b2d3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .SideControlConversations .ConversationsList {
@@ -66,6 +69,17 @@
     display: flex;
 }
 
+@media screen and (max-width: 1310px){
+    .InboxChat .ChatRoom .ChatConversation {
+        max-width: calc(100% - 60px);
+    }
+
+    .SentChat .ChatRoom .ChatConversation {
+        max-width: calc(100% - 60px);
+    }
+}
+
+
 @media screen and (max-width: 1600px) {
     .SideControlConversations {
         max-width: 440px;
@@ -87,3 +101,6 @@
         padding: 20px  20px 20px 50px;
     }
 }
+
+
+

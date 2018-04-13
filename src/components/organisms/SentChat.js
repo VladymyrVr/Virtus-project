@@ -183,7 +183,7 @@ class SentChat extends Component {
                 else if (new Date(a.usermessages[a.usermessages.length -1 ].time) < new Date(b.usermessages[b.usermessages.length -1 ].time)) {
                     return  1
                 }
-
+                return true
             });
             this.setState({
                 inboxData: sortChatDate

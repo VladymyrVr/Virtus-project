@@ -64,6 +64,14 @@
     color: #ffffff !important;
 }
 
+.PersonMenu > div > div >  a {
+    text-decoration: none;
+}
+
+.PersonMenu > div > div >  a > div > span {
+    color: #ffffff !important;
+}
+
 @keyframes animation-load {
     0%, 25%, 50% {
         opacity: 0;
