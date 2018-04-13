@@ -102,5 +102,14 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+
+
+    .SideControlConversations .ConversationsList li {
+        padding: 20px;
+        width: calc(100% -  40px);
+    }
+}
+
 
 

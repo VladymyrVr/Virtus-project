@@ -104,7 +104,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #404359;
-    margin: 0 0 10px 10px;
+    margin: 0 10px 10px 10px;
 
 }
 
@@ -161,6 +161,34 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+    .InboxChat .SideControlConversations {
+        max-width: 410px;
+    }
+
+    .SentChat .SideControlConversations {
+        max-width: 410px;
+    }
+
+    .InboxChat .ChatRoom {
+        max-width: calc(100% - 410px);
+    }
+
+    .SentChat .ChatRoom {
+        max-width: calc(100% - 410px);
+    }
+
+    .InboxChat .ChatRoom .ChatConversation {
+        padding: 0 20px 10px 20px;
+        max-width: calc(100% - 40px);
+    }
+
+    .SentChat .ChatRoom .ChatConversation {
+        padding: 0 20px 10px 20px;
+        max-width: calc(100% - 40px);
+    }
+
+}
 
 @media screen and (max-height: 900px) {
 

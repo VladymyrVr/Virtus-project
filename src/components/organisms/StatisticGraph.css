@@ -128,3 +128,16 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 925px) {
+    .GraphGroup .SelectField p {
+        display: none;
+    }
+    .StatsProgressWrapper {
+        left: 0;
+        justify-content: space-around;
+    }
+
+
+
+}
