@@ -87,3 +87,32 @@
 .desc::after, .default::after {
     transform: rotate(90deg);
 }
+
+@media screen and (max-width: 1200px) {
+    .SortingBlock {
+        font-size: 14px;
+    }
+
+
+    .TableBody td {
+        font-size: 14px;
+    }
+
+    .ActiveStatus::before, .DisableStatus::before {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .SortingBlock {
+        font-size: 12px;
+    }
+
+
+    .TableBody td {
+        font-size: 12px;
+    }
+}
+

@@ -58,7 +58,7 @@ class StatisticGraph extends Component {
                     this.setState({
                         graphData: res,
                     });
-                    let chart = this.statsChart.getChart();
+                    let chart = this.statsChart !== undefined &&  this.statsChart.getChart();
                     chart.xAxis[0].setExtremes(1,7);
                     this.state.graphData.CategoriesData && chart.xAxis[0].setCategories(this.state.graphData.CategoriesData, true);
                     this.state.graphData.SeriesData && chart.series[0].setData(this.state.graphData.SeriesData, true);
@@ -78,7 +78,7 @@ class StatisticGraph extends Component {
                     this.setState({
                         graphData: res,
                     });
-                    let chart = this.statsChart.getChart();
+                    let chart = this.statsChart !== undefined &&  this.statsChart.getChart();
                     chart.xAxis[0].setExtremes(1, 30);
                     this.state.graphData.CategoriesData && chart.xAxis[0].setCategories(this.state.graphData.CategoriesData, true);
                     this.state.graphData.SeriesData && chart.series[0].setData(this.state.graphData.SeriesData, true);
@@ -97,7 +97,7 @@ class StatisticGraph extends Component {
                     this.setState({
                         graphData: res,
                     });
-                    let chart = this.statsChart.getChart();
+                    let chart = this.statsChart !== undefined &&  this.statsChart.getChart();
                     chart.xAxis[0].setExtremes(1,12);
                     this.state.graphData.CategoriesData && chart.xAxis[0].setCategories(this.state.graphData.CategoriesData, true);
                     this.state.graphData.SeriesData && chart.series[0].setData(this.state.graphData.SeriesData, true);
@@ -109,6 +109,7 @@ class StatisticGraph extends Component {
         store.subscribe((state) => {
             this.filterData(store.getState().statisticsData)
         });
+        console.log(this.statsChart);
         return (
             <div className="GraphGroup">
                 <ReactHighcharts config={StasticConfig} ref={(chart) => {
