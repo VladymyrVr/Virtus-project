@@ -109,7 +109,6 @@ class StatisticGraph extends Component {
         store.subscribe((state) => {
             this.filterData(store.getState().statisticsData)
         });
-        console.log(this.statsChart);
         return (
             <div className="GraphGroup">
                 <ReactHighcharts config={StasticConfig} ref={(chart) => {
