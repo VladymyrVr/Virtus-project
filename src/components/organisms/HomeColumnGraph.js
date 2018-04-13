@@ -37,7 +37,7 @@ class HomeColumnGraph extends Component {
                     graphData: res,
                     isLoading: false
                 });
-                let homeChart = this.homeColumnChart.getChart();
+                let homeChart =this.homeColumnChart.getChart !== null &&   this.homeColumnChart.getChart();
                 !this.state.isLoading && homeChart.series[0].setData(this.state.graphData.SeriesData, true);
                 !this.state.isLoading && homeChart.xAxis[0].setCategories(this.state.graphData.CategoriesData, true);
                 homeChart.xAxis[0].setExtremes(1, 12);
@@ -58,7 +58,7 @@ class HomeColumnGraph extends Component {
                     this.setState({
                         graphData: res,
                     });
-                    let homeChart = this.homeColumnChart !== undefined && this.homeColumnChart.getChart();
+                    let homeChart =this.homeColumnChart.getChart !== null &&   this.homeColumnChart.getChart();;
                     homeChart.xAxis[0].setExtremes(1,7);
                     this.state.graphData.CategoriesData && homeChart.xAxis[0].setCategories(this.state.graphData.CategoriesData, true);
                     this.state.graphData.SeriesData && homeChart.series[0].setData(this.state.graphData.SeriesData, true);
@@ -77,7 +77,7 @@ class HomeColumnGraph extends Component {
                     this.setState({
                         graphData: res,
                     });
-                    let homeChart = this.homeColumnChart !== undefined && this.homeColumnChart.getChart();
+                    let homeChart =this.homeColumnChart.getChart !== null &&   this.homeColumnChart.getChart();
                     homeChart.xAxis[0].setExtremes(1, 30);
                     this.state.graphData.CategoriesData && homeChart.xAxis[0].setCategories(this.state.graphData.CategoriesData, true);
                     this.state.graphData.SeriesData && homeChart.series[0].setData(this.state.graphData.SeriesData, true);
@@ -96,7 +96,7 @@ class HomeColumnGraph extends Component {
                     this.setState({
                         graphData: res,
                     });
-                    let homeChart = this.homeColumnChart !== undefined && this.homeColumnChart.getChart();
+                    let homeChart =this.homeColumnChart.getChart !== null &&   this.homeColumnChart.getChart();
                     homeChart.xAxis[0].setExtremes(1,12);
                     this.state.graphData.CategoriesData && homeChart.xAxis[0].setCategories(this.state.graphData.CategoriesData, true);
                     this.state.graphData.SeriesData && homeChart.series[0].setData(this.state.graphData.SeriesData, true);
