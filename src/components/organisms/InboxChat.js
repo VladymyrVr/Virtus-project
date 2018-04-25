@@ -50,90 +50,40 @@ class InboxChat extends Component {
     }
 
     setAvatar = (target) => {
-        if (target === '1') {
-            return Michelle
-        }
-        else if (target === '2') {
-            return Jolene
-        }
-        else if (target === '3') {
-            return Lyall
-        }
-        else if (target === '4') {
-            return Dominic
-        }
-        else if (target === '5') {
-            return John
+        switch  (target) {
+            case '1':
+                return Michelle;
+                break;
+            case '2':
+                return Jolene;
+                break;
+            case '3':
+                return Lyall;
+                break;
+            case '4':
+                return Dominic;
+                break;
+            case '5':
+                return John;
+                break;
         }
     };
 
 
+
+
     changeChatId = (target) => {
-        if (target === '1') {
-            let setCompanion = this.state.inboxData.filter(function (item) {
-                if (item.id === target) {
-                    return item
-                }
-                return setCompanion;
-            });
-            store.dispatch({
-                type: 'CHAT_ID',
-                payload: setCompanion
-            });
-            this.setState({
-                chatData: setCompanion
-            });
-
-        }
-        else if (target === '2') {
-            let setCompanion = this.state.inboxData.filter(function (item) {
-                if (item.id === target) {
-                    return item
-                }
-                return setCompanion
-            });
-            this.setState({
-                chatData: setCompanion
-            });
-            store.dispatch({
-                type: 'CHAT_ID',
-                payload: setCompanion
-            })
-        }
-
-        else if (target === '3') {
-            let setCompanion = this.state.inboxData.filter(function (item) {
-                if (item.id === target) {
-                    return item
-                }
-                return setCompanion
-            });
-            this.setState({
-                chatData: setCompanion,
-            });
-            store.dispatch({
-                type: 'CHAT_ID',
-                payload: setCompanion
-            })
-        }
-        else if (target === '4') {
-            let setCompanion = this.state.inboxData.filter(function (item) {
-                if (item.id === target) {
-                    return item
-                }
-                return setCompanion
-            });
-            this.setState({
-                chatData: setCompanion
-            });
-            store.dispatch({
-                type: 'CHAT_ID',
-                payload: setCompanion
-            })
-        }
+        let setCompanion = this.state.inboxData.filter(function (item) {
+            return item.id === target;
+        });
         this.setState({
-            chatId: target
+            chatData: setCompanion
+        });
+        store.dispatch({
+            type: 'CHAT_ID',
+            payload: setCompanion
         })
+
     };
 
     refreshConversation = (target) => {

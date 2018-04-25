@@ -76,8 +76,8 @@ const SortableBody = (props) => {
                 <td>{element[2]}</td>
                 <td>{element[3]}</td>
                 <td>{element[4]+'%'}</td>
-                <td>{element[5]+'%'}</td>
-                <td>{element[6]+'%'}</td>
+                <td>{element[5]+'$'}</td>
+                <td>{element[6]+'$'}</td>
                 <td>{element[7]+'%'}</td>
                 <td className={element[8] === 'Active' ? 'ActiveStatus' : 'DisableStatus'}>{element[8]}</td>
             </tr>
